@@ -5,6 +5,7 @@ public class Lista<T> implements TADLista<T> {
 	public T[] lista;
 	public int posicao;
 	
+	@SuppressWarnings("unchecked")
 	public Lista(int tamanho) {
 		lista = (T[]) new Object[tamanho];
 		posicao = -1;
